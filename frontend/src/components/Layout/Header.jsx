@@ -233,7 +233,7 @@ const Header = ({ activeHeading }) => {
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
         }
-      w-full h-[60px] bg-[#fff] z-50 top-0 left-0 shadow-sm 800px:hidden`}
+      w-full h-[75px] bg-[#fff] z-50 top-0 left-0 shadow-sm 800px:hidden`}
       >
         <div className="w-full flex items-center justify-between">
           <div>
@@ -244,8 +244,36 @@ const Header = ({ activeHeading }) => {
             />
           </div>
           <div>
-            <Link to="/">
-              <img src={logo} alt="" className="mt-3 cursor-pointer" />
+            <Link to="/" style={{ display: "flex", alignItems: "center" }}>
+              <span>
+                <img
+                  src={logo}
+                  width="57"
+                  style={{ height: "55px" }}
+                  alt=""
+                  className="mt-4 cursor-pointer"
+                />
+              </span>
+              <span
+                style={{
+                  fontSize: "30px",
+                  fontWeight: "bold",
+                  color: "#186F65",
+                  marginLeft: "5px", // Adjust spacing as needed
+                }}
+              >
+                F
+              </span>
+              <span
+                style={{
+                  fontSize: "25px",
+                  fontWeight: "bold",
+                  color: "#186F65",
+                  marginLeft: "5px", // Adjust spacing as needed
+                }}
+              >
+                arm2Fork
+              </span>
             </Link>
           </div>
           <div>
