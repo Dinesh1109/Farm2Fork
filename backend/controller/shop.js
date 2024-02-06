@@ -16,8 +16,6 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
   });
 }
 
-const BASE_URL = process.env.BASE_URL;
-
 // create shop
 router.post(
   "/create-shop",
@@ -35,7 +33,7 @@ router.post(
 
       const seller = {
         name: req.body.name,
-        email: email,
+        email,
         password: req.body.password,
         avatar: {
           public_id: myCloud.public_id,
@@ -51,7 +49,7 @@ router.post(
       const activationUrl = `https://farm2fork.vercel.app/seller/activation/${activationToken}`;
 
       try {
-        await sendMail
+        await sendMail({
           email: seller.email,
           subject: "Activate your Shop",
           message: `Hello ${seller.name}, please click on the link to activate your shop: ${activationUrl}`,
