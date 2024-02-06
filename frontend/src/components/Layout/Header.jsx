@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../../styles/styles";
 import { categoriesData, productData } from "../../static/data";
-import logo from "../../fresh-img.png"
+import logo from "../../fresh-img.png";
 import {
   AiOutlineHeart,
   AiOutlineSearch,
@@ -57,16 +57,39 @@ const Header = ({ activeHeading }) => {
       <div className={`${styles.section}`}>
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between align-items-bottom">
           <div>
-            <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+            <Link
+              to="/"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                textDecoration: "none",
+              }}
+            >
               <img
                 src={logo}
                 alt=""
                 className="logo-img"
                 width="70"
-                style={{ height: '60px' }}
+                style={{ height: "60px" }}
               />
-                <span style={{ fontSize: '35px', fontWeight: 'bold', color: '#186F65' }}>F</span>
-               <span style={{ fontSize: '25px', fontWeight: 'bold', color: '#186F65' }}>arm2Fork</span>
+              <span
+                style={{
+                  fontSize: "35px",
+                  fontWeight: "bold",
+                  color: "#186F65",
+                }}
+              >
+                F
+              </span>
+              <span
+                style={{
+                  fontSize: "25px",
+                  fontWeight: "bold",
+                  color: "#186F65",
+                }}
+              >
+                arm2Fork
+              </span>
             </Link>
           </div>
           {/* search box */}
@@ -222,11 +245,7 @@ const Header = ({ activeHeading }) => {
           </div>
           <div>
             <Link to="/">
-              <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-                alt=""
-                className="mt-3 cursor-pointer"
-              />
+              <img src={logo} alt="" className="mt-3 cursor-pointer" />
             </Link>
           </div>
           <div>
