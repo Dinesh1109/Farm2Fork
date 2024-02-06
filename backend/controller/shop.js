@@ -48,10 +48,10 @@ router.post(
 
       const activationToken = createActivationToken(seller);
 
-      const activationUrl = `${BASE_URL}/seller/activation/${activationToken}`;
+      const activationUrl = `https://farm2fork.vercel.app/seller/activation/${activationToken}`;
 
       try {
-        await sendMail({
+        await sendMail
           email: seller.email,
           subject: "Activate your Shop",
           message: `Hello ${seller.name}, please click on the link to activate your shop: ${activationUrl}`,
