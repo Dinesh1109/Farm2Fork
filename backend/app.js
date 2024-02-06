@@ -15,7 +15,7 @@ const BASE_URL = process.env.BASE_URL;
 
 app.use(
   cors({
-    origin: "https://farm2fork.vercel.app/",
+    origin: "https://farm2fork.vercel.app",
     credentials: true,
   })
 );
