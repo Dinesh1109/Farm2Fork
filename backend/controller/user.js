@@ -43,7 +43,7 @@ router.post("/create-user", async (req, res, next) => {
 
     const activationToken = createActivationToken(user);
 
-    const activationUrl = `https://farm2fork.vercel.app//activation/${activationToken}`;
+    const activationUrl = `http://localhost:3000//activation/${activationToken}`;
 
     try {
       await sendMail({
