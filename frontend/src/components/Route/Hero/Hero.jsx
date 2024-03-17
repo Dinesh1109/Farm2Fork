@@ -19,8 +19,9 @@ const Hero = () => {
         </h1>
         <p className="pt-5 text-[16px] font-[Poppins] font-[400] text-[#F3FDE8]">
           Discover a World of Exceptional Culinary Delights as You Embark on a
-          <br/>
-          Journey of Flavor and Freshness, <br/>Connecting Farms to Your Fork - Where <br/>
+          <br />
+          Journey of Flavor and Freshness, <br />
+          Connecting Farms to Your Fork - Where <br />
           Every Dish is a Celebration of Nature's Bounty!"
         </p>
         <Link to="/products" className="inline-block">

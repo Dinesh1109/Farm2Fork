@@ -267,7 +267,7 @@ const AllOrders = () => {
       row.push({
         id: item._id,
         itemsQty: item.cart.length,
-        total: "Rs " + item.totalPrice,
+        total: "₹ " + item.totalPrice,
         status: item.status,
       });
     });
@@ -355,7 +355,7 @@ const AllRefundOrders = () => {
       row.push({
         id: item._id,
         itemsQty: item.cart.length,
-        total: "Rs " + item.totalPrice,
+        total: "₹ " + item.totalPrice,
         status: item.status,
       });
     });
@@ -440,7 +440,7 @@ const TrackOrder = () => {
       row.push({
         id: item._id,
         itemsQty: item.cart.length,
-        total: "Rs " + item.totalPrice,
+        total: "₹ " + item.totalPrice,
         status: item.status,
       });
     });
@@ -750,7 +750,7 @@ const Address = () => {
               <h5 className="pl-5 font-[600]">{item.addressType}</h5>
             </div>
             <div className="pl-8 flex items-center">
-              <h6 className="text-[12px] 800px:text-[unset]">
+              <h6 className="text-[15px] 800px:text-[unset]">
                 {item.address1} {item.address2}
               </h6>
             </div>

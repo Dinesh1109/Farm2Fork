@@ -75,7 +75,7 @@ const AllOrders = () => {
       row.push({
         id: item._id,
         itemsQty: item.cart.length,
-        total: "Rs " + item.totalPrice,
+        total: "₹ " + item.totalPrice,
         status: item.status,
       });
     });
